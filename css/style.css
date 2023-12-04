@@ -63,7 +63,7 @@ body {
     }
 
     to {
-        transform: translateY(20px) ;
+        transform: translateY(20px);
     }
 }
 
@@ -362,7 +362,7 @@ body {
     }
 }
 
-.logomain {
+/* .logomain {
     position: relative;
     z-index: 20;
 }
@@ -389,7 +389,7 @@ body {
     position: absolute;
     right: 2px;
     top: 100px;
-}
+} */
 
 h1 img {
     animation: rolling 3.5s infinite alternate ease-in-out;
@@ -432,7 +432,7 @@ h1 img {
     width: 120px;
     position: absolute;
     right: 50px;
-    top: 30px;
+    top: 60px;
     animation-delay: .9s;
 }
 
@@ -450,8 +450,9 @@ h1 {
 }
 
 .youesimain {
+    width: 100px;
     position: absolute;
-    left: 380px;
+    left: 70%;
     top: 250px;
 }
 
@@ -478,8 +479,7 @@ h1 {
 
 .aboutustext {
     font-size: 18px;
-    padding: 2rem, 2rem, 0, 2rem;
-    width: 50%;
+    width: 15rem;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2rem;
@@ -515,17 +515,24 @@ h1 {
         transform: rotate(0);
     }
 }
-
+.maset{
+    position: relative;
+}
 .osusume1 {
     position: absolute;
-    left: 3px;
+    top: -10%;
+    left: -20px;
     animation: rolling .5s infinite alternate ease-in-out;
     z-index: 20;
 }
 
+.doset{position: relative;
+}
+
 .osusume2 {
     position: absolute;
-    left: 250px;
+    top: -10%;
+    left: -20px;
     animation: rolling .5s infinite alternate ease-in-out;
     z-index: 20;
 }
@@ -533,25 +540,9 @@ h1 {
 .moreisu {
     width: 150px;
     position: absolute;
-    left: 180px;
+    left: 10%;
     top: 360px;
     transform: rotate(10deg);
-}
-
-
-.morerate {
-    width: 45%;
-    position: absolute;
-    left: 30px;
-    top: 1200px;
-    animation-delay: .9s;
-}
-
-.moremidorimaffin {
-    width: 35%;
-    position: absolute;
-    left: 320px;
-    top: 1140px;
 }
 
 #MENU {
@@ -559,14 +550,15 @@ h1 {
     flex-wrap: wrap;
 }
 
-.menu img {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+.menu img {margin-left: -0.4rem;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); */
 }
 
 .MENU .menu {
     padding: 2.5rem;
     background-image: url(../imagesping/menu/menuwaku.png);
     width: 242px;
+    height: 420px;
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 10;
@@ -622,13 +614,34 @@ h4 a {
     background-image: url(../imagesping/menu/moremenu.png);
     background-repeat: no-repeat;
     background-position: center;
-    font-size: 26px;
+    font-size: 1.5rem;
     color: #A38A77;
     text-align: center;
-    width: 320px;
-    height: 100px;
     padding: 8rem;
     z-index: 100;
+}
+
+h4 {
+    width: 420px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.morerate {
+    width: 45%;
+    position: absolute;
+    left: 30px;
+    top: 1300px;
+    animation-delay: .9s;
+}
+
+.moremidorimaffin {
+    width: 35%;
+    position: absolute;
+    left: 320px;
+    top: 1200px;
 }
 
 h4 a:hover {
@@ -712,6 +725,7 @@ h4 a:hover {
 }
 
 .yousei {
+    width: 100px;
     position: absolute;
     left: 300px;
     top: 1px;
@@ -772,7 +786,30 @@ footer {
     text-align: center;
 }
 
-@media (width<640px){
-    .menu{width: 400px;
-}
+@media (width<640px) {
+    /* .MENU .menu {
+
+    } */
+
+    #MENU{
+        display:block;
+        justify-content: center;
+    }
+
+    .MENU .menu{
+        margin-left: 2rem;
+        width: 300px;
+        position: relative;
+        z-index: 100;
+
+
+   } 
+    .menuall {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutustext {
+        font-size: 16px;
+    }
 }

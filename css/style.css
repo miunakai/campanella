@@ -1,0 +1,778 @@
+.bg {
+    width: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #21212f;
+}
+
+p {
+    font-size: 12px;
+    color: #A38A77;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Futura;
+}
+
+.header {
+    background-color: #C8BB9B;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header ul li a {
+    color: #ffff;
+}
+
+.header ul li a:hover {
+    color: #E4007F;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    background: #F8F5EC;
+}
+
+.bg-item {
+    position: absolute;
+    animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px) ;
+    }
+}
+
+/* ロゴ斜め */
+.b1 {
+    top: 10%;
+    left: 25%;
+    animation-delay: .5s;
+}
+
+/* コーヒーピッチャー */
+.b2 {
+    width: 200px;
+    top: 10%;
+    left: 70%;
+    animation-delay: .3s;
+}
+
+.b2 img {
+    transform: rotate(40deg)
+}
+
+/* ピンクドーナツ */
+.b3 {
+    width: 180px;
+    top: 1%;
+    left: 5%;
+    animation-delay: .9s;
+}
+
+.b3 img {
+    transform: rotate(10deg)
+}
+
+/* みどりカップケーキ */
+.b4 {
+    width: 200px;
+    top: 27%;
+    left: 20%;
+    animation-delay: 1.2s;
+}
+
+.b4 img {
+    transform: rotate(-50deg)
+}
+
+/* ピンク花瓶 */
+.b5 {
+    width: 70px;
+    top: 50%;
+    left: 8%;
+    animation-delay: 1.2s;
+}
+
+.b5 img {
+
+    transform: rotate(-15deg);
+}
+
+/* 黄色花瓶 */
+.b6 {
+    width: 150px;
+    top: 25%;
+    left: 90%;
+    animation-delay: .2s;
+}
+
+.b6 img {
+
+    transform: rotate(-40deg)
+}
+
+/* ラテアート */
+.b7 {
+    width: 200px;
+    top: 40%;
+    left: 75%;
+    animation-delay: .5s;
+}
+
+.b7 img {
+    transform: rotate(30deg);
+}
+
+/* みどりカップケーキ */
+.b8 {
+    width: 180px;
+    top: 50%;
+    left: 90%;
+    animation-delay: .8s;
+}
+
+.b8 img {
+    transform: rotate(-20deg)
+}
+
+/* 赤カップケーキ */
+.b9 {
+    width: 140px;
+    top: 50%;
+    left: 65%;
+    animation-delay: .2s;
+}
+
+.b9 img {
+    transform: rotate(10deg);
+}
+
+/* パープル妖精 */
+.b10 {
+    top: 70%;
+    left: 90%;
+    animation-delay: 1s;
+}
+
+.b10 img {
+    transform: rotate(40deg);
+}
+
+/* チョコドーナツ */
+.b11 {
+    top: 50%;
+    left: 17%;
+    animation-delay: .3s;
+}
+
+.b11 img {
+    transform: rotate(40deg);
+    width: 30%;
+}
+
+/* 青いコーヒー */
+.b12 {
+    top: 27%;
+    left: 1%;
+    animation-delay: .1s;
+}
+
+.b12 img {
+    transform: rotate(40deg);
+    width: 70%;
+}
+
+/* ピンクドーナツ */
+.b13 {
+    width: 180px;
+    top: 80%;
+    left: 90%;
+    animation-delay: .3s;
+}
+
+.b13 img {
+    transform: rotate(40deg);
+}
+
+/* グレー椅子 */
+.b14 {
+    top: 70%;
+    left: 20%;
+    animation-delay: .7s;
+}
+
+.b14 img {
+    transform: rotate(40deg);
+}
+
+/* 木の椅子 */
+.b15 {
+    width: 180px;
+    top: 65%;
+    left: 70%;
+    animation-delay: .8s;
+}
+
+.b15 img {
+    transform: rotate(40deg);
+}
+
+/* ロゴななめpink */
+.b16 {
+    top: 1%;
+    left: 86%;
+    animation-delay: .5s;
+}
+
+.b16 img {
+    transform: rotate(-20deg);
+}
+
+/* ピンク妖精 */
+.b17 {
+    top: 20%;
+    left: 20%;
+    animation-delay: .3s;
+}
+
+.b17 img {
+    transform: rotate(40deg);
+}
+
+/* みどり妖精 */
+.b18 {
+    top: 70%;
+    left: 2%;
+    animation-delay: .3s;
+}
+
+/* 赤カップケーキ */
+.b19 {
+    width: 150px;
+    top: 85%;
+    left: 2%;
+    animation-delay: .6s;
+}
+
+.b19 img {
+    transform: rotate(-40deg);
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    /* background: #F9D9EF; */
+    background-image: url(../imagesping/simasimahaikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.content-wrap {
+    width: 100%;
+    max-width: 484px;
+    margin: 0 auto;
+    background: #F9D9EF;
+}
+
+
+.mainVisual .haikei {
+    display: flex;
+    justify-content: center;
+}
+
+.mainVisual .logomain {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    z-index: 100;
+}
+
+.fadein {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein2 {
+    animation: fadein 1s infinite alternate ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein3 {
+    animation: fadein 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logomain {
+    position: relative;
+    z-index: 20;
+}
+
+.logousui1 {
+    position: absolute;
+    left: 5px;
+    top: -20px;
+}
+
+.logousui2 {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+}
+
+.logousui3 {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+.logousui4 {
+    position: absolute;
+    right: 2px;
+    top: 100px;
+}
+
+h1 img {
+    animation: rolling 3.5s infinite alternate ease-in-out;
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ribon {
+    position: relative;
+}
+
+.fuwafuwayousei {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    animation-delay: .2s;
+}
+
+.fuwafuwadonut {
+    width: 120px;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    animation-delay: .9s;
+}
+
+.mainVisual .ribon {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    z-index: 100;
+}
+
+.about {
+    position: relative;
+}
+
+.youesimain {
+    position: absolute;
+    left: 380px;
+    top: 250px;
+}
+
+#aboutus {
+    position: relative;
+    z-index: 100;
+}
+
+.aboutrate {
+    position: absolute;
+    left: 35px;
+    top: 95px;
+    transform: rotate(-30deg);
+    animation-delay: .9s;
+}
+
+#aboutus {
+    margin-top: 6rem;
+    background-image: url(../imagesping/aboutus.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aboutustext {
+    font-size: 18px;
+    padding: 2rem, 2rem, 0, 2rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.Menu {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.menu p {
+    padding: 0, 5rem;
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.osusume1 {
+    position: absolute;
+    left: 3px;
+    animation: rolling .5s infinite alternate ease-in-out;
+    z-index: 20;
+}
+
+.osusume2 {
+    position: absolute;
+    left: 250px;
+    animation: rolling .5s infinite alternate ease-in-out;
+    z-index: 20;
+}
+
+.moreisu {
+    width: 150px;
+    position: absolute;
+    left: 180px;
+    top: 360px;
+    transform: rotate(10deg);
+}
+
+
+.morerate {
+    width: 45%;
+    position: absolute;
+    left: 30px;
+    top: 1200px;
+    animation-delay: .9s;
+}
+
+.moremidorimaffin {
+    width: 35%;
+    position: absolute;
+    left: 320px;
+    top: 1140px;
+}
+
+#MENU {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.MENU .menu {
+    padding: 2.5rem;
+    background-image: url(../imagesping/menu/menuwaku.png);
+    width: 242px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 10;
+}
+
+.menu p {
+    padding-top: 8px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    color: #E4007F;
+    padding: 0, 6rem;
+}
+
+h2 {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    color: #A38A77;
+    font-weight: 8000;
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: #A38A77;
+    margin-top: 8px;
+}
+
+.rate {
+    height: 270px;
+}
+
+.okawari {
+    height: 270px;
+}
+
+.booth {
+    margin-top: 14rem;
+}
+
+.boothtext {
+    font-size: 16px;
+}
+
+h4 a {
+    background-image: url(../imagesping/menu/moremenu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 26px;
+    color: #A38A77;
+    text-align: center;
+    width: 320px;
+    height: 100px;
+    padding: 8rem;
+    z-index: 100;
+}
+
+h4 a:hover {
+    color: #A38A77;
+}
+
+.slide {
+    margin: 6rem, 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 1rem;
+    overflow: visible;
+}
+
+
+.swiper .card-item {
+    width: 100%;
+    padding: 1rem;
+    opacity: 0.6;
+    transform: scale(0.8);
+    transition: .3s;
+}
+
+
+.swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-img {
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.boothtext {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    bottom: 0;
+    content: "";
+    height: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.Reserve {
+    width: 80%;
+    position: relative;
+    padding: 2rem;
+}
+
+.TEL {
+    position: absolute;
+    top: 120px;
+    right: -50px;
+}
+
+.capcake {
+    width: 25%;
+    position: absolute;
+    top: 180px;
+    left: 65px;
+    transform: rotate(-25deg);
+    animation-delay: .6s;
+}
+
+.yousei {
+    position: absolute;
+    left: 300px;
+    top: 1px;
+    transform: rotate(-10deg);
+    animation-delay: .9s;
+}
+
+.reserve :hover {
+    transform: scale(1.1, 1.1);
+}
+
+.TEL :hover {
+    transform: scale(1.1, 1.1);
+}
+
+.followus {
+    margin-top: 9rem;
+}
+
+.followus .tiktok-embed {
+    margin: 0 auto;
+}
+
+.twitter-timeline {
+    margin-top: 2rem;
+}
+
+.access {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+iframe {
+    padding: 1rem;
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.accesstext {
+    padding: 2rem;
+}
+
+
+footer {
+    background-color: #C8BB9B;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footertext {
+    padding: 2rem;
+    color: #ffff;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+@media (width<640px){
+    .menu{width: 400px;
+}
+}

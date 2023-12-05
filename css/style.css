@@ -40,6 +40,7 @@ body {
 
 .header ul li a:hover {
     color: #E4007F;
+    font-
 }
 
 .bg {
@@ -334,9 +335,9 @@ body {
     }
 }
 
-.fadein2 img {
+/* .fadein2 img {
     animation: fadein 1s infinite alternate ease-in;
-}
+} */
 
 @keyframes fadein {
     0% {
@@ -348,9 +349,9 @@ body {
     }
 }
 
-.fadein3 img {
+/* .fadein3 img {
     animation: fadein 1.5s infinite alternate ease-in-out;
-}
+} */
 
 @keyframes fadein {
     0% {
@@ -494,7 +495,7 @@ h1 {
 .osusume1 {
     position: absolute;
     top: 0%;
-    left: -20px;
+    left: 0;
     animation: rolling .5s infinite alternate ease-in-out;
     z-index: 20;
 }
@@ -571,7 +572,7 @@ h2 {
 .fadein2 .logousui4 {
     position: absolute;
     right: -30%;
-    top: 10%;
+    top: 210%;
     transform: rotate(-10deg);
 z-index: -1;
 }
@@ -616,7 +617,7 @@ h3 {
 }
 
 .booth {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .boothtext {
@@ -645,16 +646,20 @@ h4 {
 .morerate {
     width: 45%;
     position: absolute;
-    left: 30px;
-    bottom: -100px;
+    left: 20px;
+    bottom: -220px;
     animation-delay: .9s;
 }
 
 .moremidorimaffin {
     width: 35%;
     position: absolute;
-    left: 320px;
-    bottom: -50px;
+    left: 300px;
+    bottom: -90px;
+}
+
+.logomain img{
+z-index: 10;
 }
 
 h4 a:hover {
@@ -818,6 +823,10 @@ footer {
         justify-content: center;
     }
 
+    h4{
+        display: block;
+        justify-content: center;
+    }
     .aboutustext {
         font-size: 16px;
     }

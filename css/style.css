@@ -334,7 +334,7 @@ body {
     }
 }
 
-.fadein2 {
+.fadein2 img {
     animation: fadein 1s infinite alternate ease-in;
 }
 
@@ -348,7 +348,7 @@ body {
     }
 }
 
-.fadein3 {
+.fadein3 img {
     animation: fadein 1.5s infinite alternate ease-in-out;
 }
 
@@ -361,35 +361,6 @@ body {
         opacity: 1;
     }
 }
-
-/* .logomain {
-    position: relative;
-    z-index: 20;
-}
-
-.logousui1 {
-    position: absolute;
-    left: 5px;
-    top: -20px;
-}
-
-.logousui2 {
-    position: absolute;
-    left: 60px;
-    top: 120px;
-}
-
-.logousui3 {
-    position: absolute;
-    right: 10px;
-    top: -10px;
-}
-
-.logousui4 {
-    position: absolute;
-    right: 2px;
-    top: 100px;
-} */
 
 h1 img {
     animation: rolling 3.5s infinite alternate ease-in-out;
@@ -485,9 +456,12 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.menuall{
+    position: relative;
+}
+
 .Menu {
     margin-top: 4rem;
-    position: relative;
 }
 
 .menu p {
@@ -515,23 +489,20 @@ h1 {
         transform: rotate(0);
     }
 }
-.maset{
-    position: relative;
-}
+
+
 .osusume1 {
     position: absolute;
-    top: -10%;
+    top: 0%;
     left: -20px;
     animation: rolling .5s infinite alternate ease-in-out;
     z-index: 20;
 }
 
-.doset{position: relative;
-}
 
 .osusume2 {
     position: absolute;
-    top: -10%;
+    top: 0%;
     left: -20px;
     animation: rolling .5s infinite alternate ease-in-out;
     z-index: 20;
@@ -540,17 +511,20 @@ h1 {
 .moreisu {
     width: 150px;
     position: absolute;
-    left: 10%;
-    top: 360px;
+    left: 60%;
+    top:700px;
     transform: rotate(10deg);
 }
 
 #MENU {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
 }
 
-.menu img {margin-left: -0.4rem;
+.menu img {
+    margin-left: -0.4rem;
     /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); */
 }
 
@@ -561,7 +535,7 @@ h1 {
     height: 420px;
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: 10;
+    position: relative;
 }
 
 .menu p {
@@ -586,6 +560,37 @@ h2 {
     font-size: xx-large;
 }
 
+
+.fadein2 .logousui1 {
+    position: absolute;
+    left: -40%;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.fadein2 .logousui4 {
+    position: absolute;
+    right: -30%;
+    top: 10%;
+    transform: rotate(-10deg);
+z-index: -1;
+}
+
+.fadein3 .logousui2 {
+    position: absolute;
+    right: -30%;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.fadein3 .logousui3 {
+    position: absolute;
+    left: -30%;
+    top: 10%;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
 h3 {
     font-size: 13px;
     font-weight: 700;
@@ -602,8 +607,16 @@ h3 {
     height: 270px;
 }
 
+.logomain {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
 .booth {
-    margin-top: 14rem;
+    margin-top: 3rem;
 }
 
 .boothtext {
@@ -633,7 +646,7 @@ h4 {
     width: 45%;
     position: absolute;
     left: 30px;
-    top: 1300px;
+    bottom: -100px;
     animation-delay: .9s;
 }
 
@@ -641,7 +654,7 @@ h4 {
     width: 35%;
     position: absolute;
     left: 320px;
-    top: 1200px;
+    bottom: -50px;
 }
 
 h4 a:hover {
@@ -788,22 +801,18 @@ footer {
 
 @media (width<640px) {
     /* .MENU .menu {
-
     } */
 
-    #MENU{
-        display:block;
+    #MENU {
+        display: block;
         justify-content: center;
     }
 
-    .MENU .menu{
-        margin-left: 2rem;
+    .MENU .menu {
+        margin-left: 1.6rem;
         width: 300px;
-        position: relative;
-        z-index: 100;
+    }
 
-
-   } 
     .menuall {
         display: flex;
         justify-content: center;

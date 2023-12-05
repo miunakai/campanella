@@ -650,7 +650,7 @@ h4 a {
     width: 45%;
     position: absolute;
     left: 20px;
-    bottom: -220px;
+    bottom: -290px;
     animation-delay: .9s;
 }
 
@@ -658,7 +658,7 @@ h4 a {
     width: 35%;
     position: absolute;
     left: 300px;
-    bottom: -90px;
+    bottom: -100px;
 }
 
 .logomain img {

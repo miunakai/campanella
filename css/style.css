@@ -457,7 +457,7 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.menuall{
+.menuall {
     position: relative;
 }
 
@@ -513,7 +513,7 @@ h1 {
     width: 150px;
     position: absolute;
     left: 60%;
-    top:700px;
+    top: 700px;
     transform: rotate(10deg);
 }
 
@@ -574,7 +574,7 @@ h2 {
     right: -30%;
     top: 210%;
     transform: rotate(-10deg);
-z-index: -1;
+    z-index: -1;
 }
 
 .fadein3 .logousui2 {
@@ -624,23 +624,26 @@ h3 {
     font-size: 16px;
 }
 
-h4 a {
+h4 a{
+    width: 420px;
+    height: 250px;
     background-image: url(../imagesping/menu/moremenu.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    text-align: center;
+    z-index: 100;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h4 a {
     font-size: 1.5rem;
     color: #A38A77;
     text-align: center;
-    padding: 8rem;
-    z-index: 100;
-}
-
-h4 {
-    width: 420px;
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    position: relative;
 }
 
 .morerate {
@@ -658,8 +661,8 @@ h4 {
     bottom: -90px;
 }
 
-.logomain img{
-z-index: 10;
+.logomain img {
+    z-index: 10;
 }
 
 h4 a:hover {
@@ -763,12 +766,14 @@ h4 a:hover {
     margin-top: 9rem;
 }
 
-.followus .tiktok-embed {
+.tiktok-embed {
     margin: 0 auto;
+    height: 400vh;
 }
 
 .twitter-timeline {
     margin-top: 2rem;
+
 }
 
 .access {
@@ -788,7 +793,6 @@ iframe {
     padding: 2rem;
 }
 
-
 footer {
     background-color: #C8BB9B;
     display: flex;
@@ -805,8 +809,6 @@ footer {
 }
 
 @media (width<640px) {
-    /* .MENU .menu {
-    } */
 
     #MENU {
         display: block;
@@ -823,10 +825,11 @@ footer {
         justify-content: center;
     }
 
-    h4{
+    h4 {
         display: block;
         justify-content: center;
     }
+
     .aboutustext {
         font-size: 16px;
     }
